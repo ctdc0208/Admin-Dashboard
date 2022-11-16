@@ -1,0 +1,146 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+button {
+    cursor: pointer;
+}
+
+.grid {
+    display: grid;
+    grid-template-rows: 1fr 1.5fr 8fr;
+    grid-template-columns: 1fr 4fr;
+    height: 100vh;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    color: black;
+}
+
+.header-dashboard {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: blue;
+    color: white;
+    font-size: 3em;
+    grid-column: 1 / 2;
+}
+
+.header-main {
+    grid-column: 2 / 3;
+    display: grid;
+    grid-template-columns: 3fr 1.5fr;
+    align-items: center;
+}
+
+.search-bar {
+    height: 2.5em;
+    width: 50em;
+    background-color: lightgray;
+    grid-column: 1 / 2;
+}
+
+.end-header {
+    grid-column: 2 / 3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 4em;
+    padding-right: 5em;
+}
+
+.sidebar {
+    background-color: blue;
+    grid-column: 1 / 2;
+    grid-row: 2 / 4;
+}
+
+.menu {
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+.menu div,
+.settings-menu div {
+    display: flex;
+    flex-direction: row;
+}
+
+.menu div button,
+.settings-menu div button {
+    color: white;
+    font-size: 1.75em;
+    border: 0;
+    background-color: transparent;
+    padding-top: 15px;
+}
+
+.settings-menu {
+    padding-left: 20px;
+    padding-top: 50px;
+}
+
+nav {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+}
+
+.first-nav {
+    grid-column: 1 / 2;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 3em;
+}
+
+.first-nav-name-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.first-nav-name-container h1 {
+    font-size: 1.25em;
+    margin: 0;
+}
+
+.first-nav-name-container h2 {
+    font-size: 1.75em;
+    margin: 0;
+}
+
+.last-nav {
+    grid-column: 2 / 3;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-right: 5em;
+    padding-left: 6em;
+}
+
+.last-nav button {
+    border: 0;
+    border-radius: 2em;
+    font-size: 1em;
+    height: 2.5em;
+    width: 7em;
+    color: white;
+    background-color: darkblue;
+}
+
+.main-content {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    background-color: lightgray;
+    display: grid;
+}
