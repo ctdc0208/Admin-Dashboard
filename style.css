@@ -40,7 +40,7 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-color: #0e7490;
+    background-color: #075985;
     color: white;
     font-size: 3rem;
     grid-column: 1 / 2;
@@ -95,6 +95,9 @@ header {
 
 .profile-icon {
     background-image: url(./Images/SVGs/face-man.svg);
+}
+
+.profile-icon-size {
     display: block;
     margin: auto 10px auto auto;
     height: 3rem;
@@ -107,7 +110,7 @@ header {
 }
 
 .sidebar {
-    background-color: #0e7490;
+    background-color: #075985;
     grid-column: 1 / 2;
     grid-row: 2 / 4;
 }
@@ -186,13 +189,22 @@ nav {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding-left: 3rem;
+    padding-left: 30px;
+}
+
+.profile-logo-nav {
+    height: 4rem;
+    width: 4rem;
+    display: block;
+    margin: auto 10px auto 0;
+    border: 0;
 }
 
 .first-nav-name-container {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    margin-left: 0;
 }
 
 .first-nav-name-container h1 {
@@ -221,12 +233,13 @@ nav {
     height: 2.5rem;
     width: 7rem;
     color: white;
-    background-color: #0e7490;
+    background-color: #075985;
 }
 
 .main-content {
     grid-column: 2 / 3;
     grid-row: 3 / 4;
-    background-color: lightgray;
+    background-color: #f1f5f9;
     display: grid;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
 }
